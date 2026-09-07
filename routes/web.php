@@ -11,5 +11,9 @@ Route::get('/test', function () {
 });
 
 Route::get('/demo-pr', function () {
-    return 'Demo PR';
+    return 'Demo PRdwdawdwdawd';
+});
+
+Route::get('/demo-pr2', function () {
+    return 'Demo PRdwdawdwdawd';
 });
