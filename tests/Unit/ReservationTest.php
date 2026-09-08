@@ -24,7 +24,7 @@ class ReservationTest extends TestCase
         $this->assertEquals(30, $prix);
     }
 
-    public function test_calcul_prix_avec_exception(): void
+    public function test_calcul_prix_avec_exceptions(): void
     {
         $reservation = new Reservation;
         $this->expectException(\InvalidArgumentException::class);
