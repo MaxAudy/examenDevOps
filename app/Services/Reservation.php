@@ -8,7 +8,7 @@ class Reservation
     {
 
         if ($heures < 0) {
-            throw new \InvalidArgumentException();
+            throw new \InvalidArgumentException;
         }
 
         return $heures * 10;
