@@ -2,9 +2,8 @@
 
 namespace Tests\Unit;
 
-use PHPUnit\Framework\TestCase;
-
 use App\Services\Reservation;
+use PHPUnit\Framework\TestCase;
 
 class ReservationTest extends TestCase
 {
@@ -16,21 +15,18 @@ class ReservationTest extends TestCase
         $this->assertTrue(true);
     }
 
-
-
     public function test_calcul_prix_normal(): void
     {
-        $reservation = new Reservation();
+        $reservation = new Reservation;
 
         $prix = $reservation->calculerPrix(3);
 
         $this->assertEquals(30, $prix);
     }
 
-
     public function test_calcul_prix_avec_exception(): void
     {
-        $reservation = new Reservation();
+        $reservation = new Reservation;
         $this->expectException(\InvalidArgumentException::class);
         $prix = $reservation->calculerPrix(-1);
     }
