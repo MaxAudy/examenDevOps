@@ -4,7 +4,7 @@ namespace App\Services;
 
 class Reservation
 {
-    public function calculerPrix(int $heures): float
+    public function calculerPrix2(int $heures): float
     {
 
         if ($heures < 0) {
