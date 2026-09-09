@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y unzip libzip-dev && rm -rf /var/lib/apt
 # Extensions PHP
 RUN docker-php-ext-install pdo pdo_mysql bcmath zip
 
-# Opcache
+# Opcache (déjà compilé, juste à activer)
 RUN docker-php-ext-enable opcache
 
 # Xdebug
