@@ -13,3 +13,7 @@ Route::get('/test', function () {
 Route::get('/demo-pr', function () {
     return 'Demo PR';
 });
+
+Route::get('/test', function () {
+    return response('OK', 200);
+});
