@@ -10,3 +10,8 @@ Route::get('/', function () {
 Route::get('/test', function () {
     return response('OK', 200);
 });
+
+
+Route::get('/test4', function () {
+    return response('OK', 200);
+});
